@@ -143,12 +143,16 @@ class JSSAlertView: UIViewController {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("NSCoding not supported")
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName:nibNameOrNil, bundle:nibBundleOrNil)
+    }
+    
+    required init( aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func didReceiveMemoryWarning() {
@@ -360,12 +364,13 @@ class JSSAlertView: UIViewController {
         UIView.animateWithDuration(0.2, animations: {
             self.view.alpha = 1
         })
-        self.containerView.frame.origin.x = self.view.center.x
-        self.containerView.center.y = -500
+        self.containerView.center = self.view.center
+        self.containerView.transform = CGAffineTransformMakeScale(0, 0)
+        
         UIView.animateWithDuration(0.5, delay: 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: [], animations: {
-            self.containerView.center = self.view.center
+            self.containerView.transform = CGAffineTransformMakeScale(1,1)
             }, completion: { finished in
-                
+               
         })
         
         isAlertOpen = true
@@ -390,10 +395,14 @@ class JSSAlertView: UIViewController {
     
     func closeView(withCallback:Bool, source:ActionType = .Close) {
         UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
-            self.containerView.center.y = self.view.center.y + self.viewHeight!
+
+            
+            self.containerView.alpha = 0
+
             }, completion: { finished in
                 UIView.animateWithDuration(0.1, animations: {
                     self.view.alpha = 0
+                    
                     }, completion: { finished in
                         if withCallback {
                             if let action = self.closeAction where source == .Close {

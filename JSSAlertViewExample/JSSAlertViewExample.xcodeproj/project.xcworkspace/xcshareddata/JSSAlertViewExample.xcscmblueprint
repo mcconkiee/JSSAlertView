@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6CD21E61BF36BC59938931F68888351E08F0FA34",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6CD21E61BF36BC59938931F68888351E08F0FA34" : 0,
+    "8607565A546A4CEA9DB25764DDE4CD15AB7AA638" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "437AA3A5-C332-4078-83B1-95BC0C1BFA7C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6CD21E61BF36BC59938931F68888351E08F0FA34" : "JSSAlertView\/",
+    "8607565A546A4CEA9DB25764DDE4CD15AB7AA638" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JSSAlertViewExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JSSAlertViewExample\/JSSAlertViewExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mcconkiee\/JSSAlertView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6CD21E61BF36BC59938931F68888351E08F0FA34"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mcconkiee\/hq.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8607565A546A4CEA9DB25764DDE4CD15AB7AA638"
+    }
+  ]
+}
